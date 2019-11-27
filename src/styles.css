@@ -1,1 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; 
+    min-width: 320px;
+    font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+hr{
+    margin-left: 20px;
+    margin-right: 20px;
+
+    border-top: 1px solid lightgrey;
+}
+
+footer{
+    min-width: 320px;
+    width: 100%;
+    font-size: 10px;
+    color: grey;
+    margin: 10px;
+    position: fixed;
+    bottom: 0px;
+  }
+
+footer div{
+    margin-left: 20px;
+
+}
+
+footer a{
+    color:grey;
+    text-decoration: none;
+}
