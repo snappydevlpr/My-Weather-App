@@ -1,3 +1,10 @@
-<mat-card>
-    <h1>hello</h1>
-</mat-card>
+    <mat-card class="weather-card" *ngFor="let day of currentWeather.getData()">
+      <div *ngIf="isFarenhieht">
+        <p class="day">{{day.day}}</p>
+        <div class="temps"><img class="weather-icon" src="../../assets/{{day.icon}}"> {{day.minF}}&#8457; {{day.maxF}}&#8457;</div>
+      </div>
+      <div *ngIf="!isFarenhieht">
+        <p class="day">{{day.day}}</p>
+        <div class="temps"> <img class="weather-icon" src="../../assets/{{day.icon}}"> {{day.minC}}&#8451; {{day.maxC}}&#8451;</div>
+      </div>
+    </mat-card>

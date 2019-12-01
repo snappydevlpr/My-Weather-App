@@ -292,13 +292,19 @@
   <span class="title">My Weather App</span>
 </div>
 
-<div class="content" role="main">
-  <div class="search">
-    <mat-form-field class="text-search">
-      <input (keyup)="getLocation($event)" matInput placeholder="Location">
-    </mat-form-field>
-    <button mat-raised-button color="primary" (click)="getWeather()">Search</button>
-  </div>
-    <p *ngFor="let tmp of avgTmpsHigh">{{tmp}}</p>
-    <app-weather-card></app-weather-card>
+<div class="search">
+  <mat-form-field class="text-search">
+    <input (keyup)="getLocation($event)" matInput placeholder="Zip Code">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="getWeather()">Search</button>
 </div>
+<div *ngIf="myWeather.getCity() != '' " role="main">
+  <h2 id="city-name">{{myWeather.getCity()}}</h2>
+  <div>
+    <p class="unit">C</p>
+    <mat-slide-toggle (change)="toggleUnit()"></mat-slide-toggle>
+    <p class="unit">F</p>
+  </div>
+</div>
+<!-- <p *ngFor="let tmp of avgTmpsHigh">{{tmp}}</p> -->
+<app-weather-card class="weather-data" [isFarenhieht]="isFarenhieht" [currentWeather]="myWeather"></app-weather-card>

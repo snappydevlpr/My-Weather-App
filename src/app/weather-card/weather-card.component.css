@@ -1,0 +1,21 @@
+.day{
+display: inline;
+}
+
+.weather-card{
+    margin: 10px;
+    height: 60px;
+}
+
+.weather-icon{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.temps{
+    margin: 10px;
+    float: right;
+}

@@ -7,14 +7,20 @@ import {WeatherObject} from '../weather-object'
 })
 export class WeatherCardComponent implements OnInit {
   private  weatherDetails = undefined
-  @Input() weather:object
+  private  cityName: string = ""
+  private  weatherEntered =false
+  @Input() currentWeather:WeatherObject = new WeatherObject
+  @Input() isFarenhieht:boolean = false;
 
   constructor() { 
-    this.weatherDetails = new WeatherObject()
+    this.isFarenhieht = false
   }
 
-
   ngOnInit() {
+    this.isFarenhieht = false
+  }
+
+  ngOnChanges(){
   }
 
 }

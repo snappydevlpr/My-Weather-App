@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatInputModule} from '@angular/material/input'
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { StoreModule } from '@ngrx/store';
 import {locationState} from './location-state';
@@ -23,6 +25,7 @@ import {MatCardModule} from '@angular/material/card';
     MatInputModule,
     MatButtonModule,
     MatCardModule,
+    MatSlideToggleModule,
     StoreModule.forRoot({
       location: locationState
     })
