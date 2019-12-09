@@ -14,7 +14,7 @@ export class AppComponent {
   private location:string = ""
   private location$: Observable<string>;
   private currentWeather: any = undefined;
-  private myWeather: WeatherObject;
+  public myWeather: WeatherObject;
   private weather: Array<any> =[];
   private maxDailyTmps = [];
   private minDailyTmps = [];
@@ -69,7 +69,6 @@ export class AppComponent {
     this.myWeather.setDay(today)
     this.myWeather.setWeatherReadings(this.weather)
     this.myWeather.setData()
-
   }
 
   public setTemps() {
@@ -96,7 +95,6 @@ export class AppComponent {
         highTmp = parseInt(this.currentWeather.list[index].main.temp_max)
       }
     }
-    console.log(this.weather)
     this.maxDailyTmps.push(highTmp-273.15);
   }
 

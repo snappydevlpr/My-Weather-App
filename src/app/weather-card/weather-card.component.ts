@@ -21,6 +21,7 @@ export class WeatherCardComponent implements OnInit {
   }
 
   ngOnChanges(){
+    this.currentWeather
   }
 
 }

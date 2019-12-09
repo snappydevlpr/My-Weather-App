@@ -3,6 +3,7 @@
 html, body { height: 100%; }
 body { margin: 0; 
     min-width: 320px;
+    overflow-x: hidden;
     font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 hr{
@@ -17,7 +18,8 @@ footer{
     width: 100%;
     font-size: 10px;
     color: grey;
-    margin: 10px;
+    padding: 10px;
+    margin: 0px;
     background: white;
     position: fixed;
     bottom: 0px;

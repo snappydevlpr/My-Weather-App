@@ -299,8 +299,8 @@
   <button mat-raised-button color="primary" (click)="getWeather()">Search</button>
 </div>
 <div *ngIf="myWeather.getCity() != '' " role="main">
-  <h2 id="city-name">{{myWeather.getCity()}}</h2>
-  <div>
+  <h2 id="city-name">{{myWeather.getCity()}}, US</h2>
+  <div class="unit-switch">
     <p class="unit">C</p>
     <mat-slide-toggle (change)="toggleUnit()"></mat-slide-toggle>
     <p class="unit">F</p>

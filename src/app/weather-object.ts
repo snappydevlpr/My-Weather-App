@@ -93,7 +93,6 @@ export class WeatherObject {
     }
 
     public getWeatherPicture() {
-        console.log("hello")
         for(let i =0; i<5; i++){
             switch (this.weatherIndicator[this.weatherReading[i].toLowerCase()]) {
                 case 0: this.weatherIcons.push("001-sunny.png")

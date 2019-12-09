@@ -9,11 +9,14 @@
 }
 
 #toolbar-logo{
-  margin-left: 50px;
+  margin-left: 20px;
 }
 
 #city-name{
   margin-left: 10px;
+  display: inline;
+  vertical-align: middle;
+
 }
 
 .title{
@@ -24,7 +27,7 @@
   text-align: center;
   vertical-align: middle;
   width: 100%;
-  margin-top:10px;
+  margin-top:20px;
   padding: 0px;
 }
 
@@ -46,4 +49,8 @@ mat-slide-toggle{
   vertical-align: middle;
   display: inline;
   margin: 10px;
+}
+
+.unit-switch{
+  display: inline;
 }
